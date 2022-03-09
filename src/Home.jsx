@@ -10,21 +10,27 @@ const Home = () => {
       <div className="menu">
         <nav>
           <Link to="/simple-calculator">
-            <div className="simpleCalculator">
+            <div className="calculator">
               <img src={imgThree} alt="Simple Calculator" />
-              <p>Simple Calculator</p>
+              <div className="overLay">
+                <p>Simple Calculator</p>
+              </div>
             </div>
           </Link>
           <Link to="/binary-calculator">
-            <div className="binaryCalulator">
+            <div className="calculator">
               <img src={imgThree} alt="Binary Calculator" />
-              <p>Binary Calculator</p>
+              <div className="overLay">
+                <p>Binary Calculator</p>
+              </div>
             </div>
           </Link>
           <Link to="/sci-calculator">
-            <div className="sciCalculator">
+            <div className="calculator">
               <img src={imgThree} alt="Sci Calculator" />
-              <p>Scientific Calculator</p>
+              <div className="overLay">
+                <p>Scientific Calculator</p>
+              </div>
             </div>
           </Link>
         </nav>

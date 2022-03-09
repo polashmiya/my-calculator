@@ -2,20 +2,42 @@
   margin-bottom: 100px;
   text-align: center;
 }
-.home .menu nav {
+.menu nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.home .menu nav img {
-  height: 300px;
-  width: 300px;
+.calculator {
   position: relative;
+  height: 400px;
+  width: 400px;
 }
-.home .menu .simpleCalculator {
-  position: relative;
+.calculator img {
+  height: 100%;
+  width: 100%;
 }
-.home .menu nav p {
+.overLay {
+  height: 0%;
+  width: 100%;
+  background: rgba(5, 20, 53, 0.8);
+  opacity: 0;
+  transition: all-linear 0.3s;
   position: absolute;
-  top: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.overLay p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+}
+.calculator:hover .overLay {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  transition: 0.7s;
+  top: 0;
+  bottom: 0;
 }
